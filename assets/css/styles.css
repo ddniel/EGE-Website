@@ -293,6 +293,7 @@ hr{
     justify-content: space-between;
     flex-direction: column-reverse;
     align-items: center;
+    height: auto;
   }
 
   body{
@@ -330,6 +331,10 @@ hr{
     font-size: 10px;
   }
 
+  footer{
+    position: relative;
+    margin-top: 50px;
+  }
 
 }
 
@@ -338,8 +343,8 @@ hr{
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
   .container{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .home_container{
