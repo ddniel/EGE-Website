@@ -354,6 +354,7 @@ hr{
     justify-content: space-between;
     flex-direction: column-reverse;
     align-items: center;
+    height: auto;
   }
 
   .text_section{
@@ -379,6 +380,11 @@ hr{
 
   body{
     height: auto;
+  }
+
+  footer{
+    position: relative;
+    margin-top: 50px;
   }
 
 
