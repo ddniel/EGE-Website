@@ -296,7 +296,7 @@ hr{
   }
 
   body{
-    height:;
+    height: auto;
   }
 
   h1{
@@ -329,6 +329,7 @@ hr{
   .info_footer{
     font-size: 10px;
   }
+
 
 }
 
@@ -370,6 +371,11 @@ hr{
   .stats p{
     font-size: 14px;
   }
+
+  body{
+    height: auto;
+  }
+
 
 }
 
