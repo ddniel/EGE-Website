@@ -18,7 +18,7 @@
 }
 
 body{
-  height: 100vh;
+  height: 100%;
 }
 
 html{
@@ -31,6 +31,10 @@ h1, h2, h3, p {
 
 h1{
   font-size: 60px;
+  color: var(--text);
+}
+
+h2{
   color: var(--text);
 }
 
@@ -69,7 +73,7 @@ button{
 
 
 
-/* ==================LANDING PAGE=================== */
+/* ======================LANDING PAGE======================================= */
 /*  HEADER  */
 
 .header{
@@ -246,13 +250,55 @@ button{
   background-color: #2F2CE0;
 }
 
+
+
+
+
+
+/* ======================SERVICES PAGE======================================= */
+
+.services_container{
+  padding-top: 180px;
+  text-align: center;
+}
+
+.grid_container{
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 40px;
+}
+
+.grid_item{
+  padding: 30px;
+}
+
+.grid_item p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
 /*   FOOTER  */
 
-footer{
+.footer_landing{
   position: absolute;
   bottom: 0;
   width: 100%;
 }
+
+.footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding-top: 50px;
+}
+
 .footer_container{
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -263,6 +309,14 @@ footer{
   text-align: right;
   font-size: 10px;
   color: #808080;
+}
+
+.bxl-facebook-circle{
+  color: #3B5998;
+}
+
+.bxl-instagram{
+  color: #e1306c;
 }
 
 i{
@@ -280,6 +334,8 @@ hr{
 
 /* ======= SMALL DEVICES ======= */
 
+/* Landing Page */
+
 @media screen and (max-width: 479px) {
   .container{
     padding-left: 13px;
@@ -293,10 +349,6 @@ hr{
     justify-content: space-between;
     flex-direction: column-reverse;
     align-items: center;
-    height: auto;
-  }
-
-  body{
     height: auto;
   }
 
@@ -331,10 +383,29 @@ hr{
     font-size: 10px;
   }
 
-  footer{
+  .footer_landing, .footer{
     position: relative;
     margin-top: 50px;
   }
+
+  /* Services Page */
+
+  .grid_container{
+    grid-template-columns: auto;
+  }
+
+  .services_container{
+    padding-top: 130px;
+  }
+
+  .grid_item p{
+    font-size: 12px;
+  }
+
+  .grid_item h2{
+    font-size: 20px;
+  }
+
 
 }
 
@@ -346,6 +417,8 @@ hr{
     padding-left: 18px;
     padding-right: 18px;
   }
+
+  /* Landing Page */
 
   .home_container{
     padding-top: 150px;
@@ -382,9 +455,31 @@ hr{
     height: auto;
   }
 
-  footer{
+  .footer_landing{
     position: relative;
     margin-top: 50px;
+  }
+
+  /* Services Page */
+
+  .grid_container{
+    grid-template-columns: auto auto;
+  }
+
+  .services_container{
+    padding-top: 130px;
+  }
+
+  .services_container h1{
+    font-size: 50px;
+  }
+
+  .grid_item p{
+    font-size: 14px;
+  }
+
+  .grid_item h2{
+    font-size: 20px;
   }
 
 
