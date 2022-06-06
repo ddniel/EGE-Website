@@ -17,9 +17,7 @@
   margin: 0;
 }
 
-body{
-  height: 100%;
-}
+
 
 html{
   scroll-behavior: smooth;
@@ -27,16 +25,13 @@ html{
 
 h1, h2, h3, p {
   font-family: 'Raleway', sans-serif;
+  color: var(--text);
 }
 
 h1{
   font-size: 60px;
-  color: var(--text);
 }
 
-h2{
-  color: var(--text);
-}
 
 p{
   color: var(--text);
@@ -48,6 +43,7 @@ ul{
 
 a{
   text-decoration: none;
+  cursor: pointer;
 }
 
 img{
@@ -86,13 +82,16 @@ button{
 
 /*  NAV  */
 
+.header{
+  background-color: #fff;
+}
 .nav{
   height: 6.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: 'Cabin', sans-serif;
-  background-color: #fff;
+
 }
 
 .nav_logo{
@@ -185,6 +184,7 @@ button{
 
 .home_container{
   padding-top: 180px;
+  padding-bottom: 40px;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -236,7 +236,7 @@ button{
   color: var(--main-red);
 }
 
-.more_button{
+.button{
   color: #fff;
   font-family: 'Cabin', sans-serif;
   font-size: 20px;
@@ -246,8 +246,82 @@ button{
   padding: .6rem 3rem;
 }
 
-.more_button:hover{
+.button:hover{
   background-color: #2F2CE0;
+}
+
+/* Services We Offer */
+
+.home_services_container{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.home_services{
+  background-color: #E6E6E6;
+}
+
+/* Our Students */
+.our_students_container{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+/* Volunteers */
+
+.home_volunteers{
+  background-color: var(--main-blue);
+}
+
+.volunteers_container{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.volunteers_container h1{
+  color: #fff;
+}
+
+.volunteer_info{
+  color: white;
+  font-size: 12px;
+}
+
+
+.grid_container_volunteer{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  padding-top: 40px;
+}
+
+
+.volunteers_container h3{
+  color: #fff;
+}
+
+.form_container{
+  padding: 0 5rem;
+}
+input{
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px 8px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.send_button{
+  background-color: #fff;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: var(--main-blue);
+}
+
+.send_button:hover{
+  background-color: #D3D3D3;
 }
 
 
@@ -285,12 +359,6 @@ button{
 
 
 /*   FOOTER  */
-
-.footer_landing{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
 
 .footer{
   position: relative;
@@ -383,9 +451,17 @@ hr{
     font-size: 10px;
   }
 
-  .footer_landing, .footer{
+  .footer{
     position: relative;
     margin-top: 50px;
+  }
+
+  .volunteer_img{
+    max-width: 80%;
+  }
+
+  .form_container{
+    padding: 0;
   }
 
   /* Services Page */
@@ -439,8 +515,8 @@ hr{
     width: auto;
   }
 
-  .text_section h1{
-    font-size: 50px;
+  h1{
+    font-size: 40px;
   }
 
   .swiper{
@@ -455,10 +531,26 @@ hr{
     height: auto;
   }
 
-  .footer_landing{
-    position: relative;
-    margin-top: 50px;
+  .grid_container h2{
+    font-size: 15px;
   }
+
+  .grid_item{
+    padding: 10px 10px;
+  }
+
+  .form_container{
+    padding: 0 1rem;
+  }
+
+  input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px 4px;
+    border-radius: 5px;
+    border-style: none;
+  }
+
 
   /* Services Page */
 
@@ -503,11 +595,19 @@ hr{
     width: 300px;
   }
 
-  .text_section h1{
+  h1{
     font-size: 40px;
   }
 
   .stats p{
     font-size: 14px;
   }
+}
+
+.grid_container h2{
+  font-size: 15px;
+}
+
+.grid_item{
+  padding: 10px 10px;
 }
