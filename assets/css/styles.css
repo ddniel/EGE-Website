@@ -302,12 +302,13 @@ button{
 }
 
 .form_container{
-  padding: 0 5rem;
+  max-width: 500px;
+  padding: 0 30px;
 }
 input{
   width: 100%;
   margin: 10px 0;
-  padding: 15px 8px;
+  padding: 10px 8px;
   border-radius: 5px;
   border-style: none;
 }
@@ -324,6 +325,9 @@ input{
   background-color: #D3D3D3;
 }
 
+.volunteer_img{
+  max-width: 180px;
+}
 
 
 
@@ -350,6 +354,43 @@ input{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+
+
+
+
+
+/* ======================MEMORIES PAGE======================================= */
+
+.memories_container{
+  padding-top: 180px;
+  text-align: center;
+}
+
+.gallery h2{
+  padding: 100px 0;
+}
+
+#swiper-memories{
+  width: auto;
+  height: auto;
+}
+
+#swiper-slide-memories img{
+  border-radius: 0;
+}
+
+#swiper-slide-memories{
+  width: 30%;
+}
+
+#swiper-slide-memories p{
+  font-size: 12px;
+  padding-top: 8px;
+}
+
+
+
 
 
 
@@ -457,11 +498,15 @@ hr{
   }
 
   .volunteer_img{
-    max-width: 80%;
+    max-width: 120px;
   }
 
   .form_container{
     padding: 0;
+  }
+
+  input{
+    padding: 8px 4px;
   }
 
   /* Services Page */
@@ -482,6 +527,23 @@ hr{
     font-size: 20px;
   }
 
+  /* Memories Page */
+  .memories_container{
+    padding-top: 130px;
+    text-align: center;
+  }
+
+  .gallery h2{
+    padding: 50px 0 !important;
+    font-size: 20px;
+  }
+  #swiper-slide-memories{
+    width: 40%;
+  }
+
+  #swiper-slide-memories p{
+    font-size: 10px;
+  }
 
 }
 
@@ -551,6 +613,10 @@ hr{
     border-style: none;
   }
 
+  .volunteer_img{
+    max-width: 150px;
+  }
+
 
   /* Services Page */
 
@@ -574,6 +640,15 @@ hr{
     font-size: 20px;
   }
 
+  /* Memories Page */
+  .memories_container{
+    padding-top: 130px;
+    text-align: center;
+  }
+
+  .gallery h2{
+    padding: 70px 0;
+  }
 
 }
 
@@ -610,4 +685,11 @@ hr{
 
 .grid_item{
   padding: 10px 10px;
+}
+
+/* Memories Page */
+
+
+.gallery h2{
+  padding: 70px 0;
 }
