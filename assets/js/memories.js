@@ -51,4 +51,3 @@ const sr = ScrollReveal({
 })
 
 sr.reveal('.gallery', {delay: 300})
-sr.reveal('.footer', {delay: 100, origin:'right'})

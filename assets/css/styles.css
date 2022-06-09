@@ -232,6 +232,7 @@ button{
   border-radius: 25px;
 }
 
+
 .stats_container{
   padding-top: 2rem;
   display: flex;
@@ -680,7 +681,7 @@ hr{
   .stats p{
     font-size: 14px;
   }
-  
+
   .grid_container h2{
     font-size: 15px;
   }
