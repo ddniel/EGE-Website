@@ -38,3 +38,21 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+
+// ====== Efectos de Scroll =======
+
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true
+})
+
+sr.reveal('.text_section', {origin: 'left'})
+sr.reveal('.images_section, .volunteers_container', {origin: 'right'})
+sr.reveal('.home_services_container, .our_students_container, .services_container', {delay: 300})
+sr.reveal('.footer', {delay: 100, origin:'right'})

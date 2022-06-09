@@ -60,6 +60,20 @@ button{
   display: grid;
 }
 
+.grid_container{
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 40px;
+}
+
+/* Efecto Zoom para los items de Grid */
+.grid_item{
+  transition: .2s;
+}
+.grid_item:hover{
+  transform: scale(1.1);
+}
+
 /* Responsive */
 .container{
   max-width: 85%;
@@ -290,12 +304,6 @@ button{
 }
 
 
-.grid_container_volunteer{
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  padding-top: 40px;
-}
-
 
 .volunteers_container h3{
   color: #fff;
@@ -340,11 +348,6 @@ input{
   text-align: center;
 }
 
-.grid_container{
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
-  padding-top: 40px;
-}
 
 .grid_item{
   padding: 30px;
@@ -677,15 +680,17 @@ hr{
   .stats p{
     font-size: 14px;
   }
+  
+  .grid_container h2{
+    font-size: 15px;
+  }
+
+  .grid_item{
+    padding: 10px 10px;
+  }
 }
 
-.grid_container h2{
-  font-size: 15px;
-}
 
-.grid_item{
-  padding: 10px 10px;
-}
 
 /* Memories Page */
 
