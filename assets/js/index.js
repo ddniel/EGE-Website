@@ -1,9 +1,10 @@
 const swiper = new Swiper('.swiper', {
   loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+
+  pagination: {
+    el: '.swiper-pagination',
   },
+
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -53,5 +54,5 @@ const sr = ScrollReveal({
 })
 
 sr.reveal('.text_section', {origin: 'left'})
-sr.reveal('.images_section, .volunteers_container', {origin: 'right'})
-sr.reveal('.home_services_container, .our_students_container, .services_container', {delay: 300})
+sr.reveal('.images_section', {origin: 'right'})
+sr.reveal('.home_services_container, .our_students_container, .services_container, .volunteers_container',  {delay: 300})
