@@ -15,14 +15,14 @@ const navMenu = document.getElementById('nav-menu')
 const navOpen = document.getElementById('menu-button')
 const navClose = document.getElementById('menu-close')
 
-if (navOpen){
-  navOpen.addEventListener('click', () =>{
+if (navOpen) {
+  navOpen.addEventListener('click', () => {
     navMenu.classList.add('show-menu')
   })
 }
 
-if (navClose){
-  navClose.addEventListener('click', () =>{
+if (navClose) {
+  navClose.addEventListener('click', () => {
     navMenu.classList.remove('show-menu')
   })
 }
@@ -31,10 +31,10 @@ if (navClose){
 
 const navLink = document.querySelectorAll('.nav_link')
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
+function linkAction() {
+  const navMenu = document.getElementById('nav-menu')
+  // When we click on each nav__link, we remove the show-menu class
+  navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
@@ -50,4 +50,18 @@ const sr = ScrollReveal({
   // reset: true
 })
 
-sr.reveal('.gallery', {delay: 300})
+sr.reveal('.gallery', { delay: 300 })
+
+//Cambiar color del Nav cuando scroll
+
+window.addEventListener('scroll', scrollHeader);
+
+function scrollHeader() {
+  const header = document.querySelector('.header');
+
+  if (this.scrollY >= 50) {
+    header.classList.add('scroll_header')
+  } else {
+    header.classList.remove('scroll_header')
+  }
+}
